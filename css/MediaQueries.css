@@ -1,0 +1,31 @@
+@media (max-width: 996px) {
+    :root{
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 850px) {
+    .date{
+      margin: 0 auto;
+    }
+    .wrapper{
+    width: 90vw;
+    height: 80vh;
+    }
+  .btn{
+    width: auto;
+      height: auto;
+    padding: 5px;
+    }
+  .popup_start h2 {
+    font-size: 1.4rem;
+    }
+  .popup_start p {
+    font-size: 1.1rem;
+    }
+  .popup_start p:nth-child(3){
+    border: none;
+    height: 200px;
+    padding: 30px;
+    }
+  }

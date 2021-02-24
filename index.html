@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/MediaQueries.css">
+    <title>Quiz</title>
+</head>
+<body>
+    <div class="remainingTime"></div>
+    <div class="wrapper">
+<h1>Quiz z pytaniami o Polsce:</h1>
+<div class="question_container">
+<div class="question">
+<p>Które z polskich jezior jest najgłębsze?</p>
+<div class="answer_area">
+<button class="answer curr btn" value="1">Hańcza</button>
+<button class="answer btn" value="0">Śniardwy</button>
+<button class="answer btn" value="0">Mamry</button>
+<button class="answer btn" value="0">Morskie Oko</button>
+</div>
+</div>
+<div class="question">
+    <p>W jakim mieście obejrzysz fontanne Neptuna?</p>
+    <div class="answer_area">
+        <button class="answer btn" value="0">Poznań</button>
+        <button class="answer btn" value="0">Szczecin</button>
+        <button class="answer curr btn" value="1">Gdańsk</button>
+        <button class="answer btn" value="0">Warszawa</button>
+</div>
+</div> 
+
+<div class="question">
+    <p>Czy Polska nalezy do Unie Europejskiej?</p>
+    <div class="answer_area">
+        <button class="answer btn" value="0">Nie</button>
+        <button class="answer btn" value="0">Nie ma czegos takiego</button>
+        <button class="answer curr btn" value="1">Tak</button>
+</div>
+</div>   
+
+<div class="question">
+    <p>Kto jest autorem słow hymni Polskiego?</p>
+    <div class="answer_area">
+        <button class="answer curr btn" value="0">Henryk Dąbrowski</button>
+        <button class="answer btn" value="1">Józef Wybicki</button>
+        <button class="answer btn" value="0">Adam Mickiewicz</button>
+        <button class="answer btn" value="0">Maria Konopnicka</button>
+</div>
+</div>            
+
+<div class="question">
+    <p>Największy średniowieczny zamek Europy znajduję sie w Polsce, gdzię?</p>
+    <div class="answer_area">
+        <button class="answer btn" value="0">Olsztyn</button>
+        <button class="answer curr btn" value="1">Malbork</button>
+        <button class="answer btn" value="0">Reszel</button>
+        <button class="answer btn" value="0">Lidzbark Warmiński</button>
+</div>
+</div>
+<div class="points_container">
+    <div class="points_buttons">
+    <button class="btn change">Sprawdz wynik</button>
+    <button class="btn clear">Resetuj</button>
+    <button class="btn btnCheckAnswer">Sprawdż prawidłowe odpowiedzi</button>
+</div>
+<div class="info">
+    <p class="alert"> Liczba punktów: 
+        <span class="spanScope"></span>
+    <span class="spanWrong"></span> </p>
+    <button class="btn newGame">Spróbuj jeszcze raz!</button>
+    
+</div>
+</div>
+</div>
+</div> 
+
+<div class="popup_start">
+    <h2>Witaj w naszym quiz'ie</h2>
+    <p>Jesteś gotowy/a?</p>
+    <p>
+        Quiz zawietra <span class="questionLength"></span> pytania,
+        na odpowiedż masz <span class="time"></span>s.
+    <br>    Średnio na każde pytanie masz 8s :D
+         Powodzenia!
+
+    </p>
+    <button class="btn close_popup">Czas start!</button>
+</div>
+
+
+
+
+   <script src="/script/index.js"></script>
+   <script src="/script/questions.js"></script>
+</body>
+</html>
