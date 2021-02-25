@@ -26,17 +26,22 @@ date.textContent = `00:00:0${second}`;
 second = allQuestion.length * 8; 
 
 btns.forEach(btn => {
-    btn.addEventListener(`click`, function(){
-        this.classList.add(`selected`);
-        if(this.classList.contains('curr')){
-            score += 1;
+
+const removeEvent = btn =>{ 
+    btn.target.classList.add(`selected`);
+
+    if(btn.target.classList.contains('curr')){
+        score += 1; 
         }else{
-            this.classList.add(`wrong`);
+            btn.target.classList.add(`wrong`);
             wrongAnswer += 1;
-        }
-    })
+        } 
+        btn.target.removeEventListener(`click`, removeEvent)    
+    }
+    btn.addEventListener(`click`, removeEvent)
 }
 );
+
 
 const addClassHiden = () =>{
     popupStart.classList.add(`hide`);
