@@ -88,7 +88,7 @@ const countTime = () =>{
         if(second == 0){
             popupStart.classList.remove(`hide`);
             BTNclearScore()
-             alert(`Upłynął czas, spróbuj ponownie !!`)
+             showPopupEndTime()
     }
 };
 
@@ -102,6 +102,27 @@ const newGame = () =>{
     BTNclearScore();
     popupStart.classList.remove(`hide`);
 }
+
+// -------  POPUP__END_OF_TIME -----
+
+const showPopupEndTime = () =>{
+    heroImg.style.display = `block`;
+    popupEndTime.style.display = `block`;
+}
+const hidePopupEndTime = () =>{
+    heroImg.style.display = `none`;
+    popupEndTime.style.display = `none`;
+}
+
+//----------------------------- 
+const heroImg = document.querySelector(`.heroImg`);
+const popupEndTime = document.querySelector(`.endOfTime`);
+const btnEndTime = document.querySelector(`.btnEndTime`);
+btnEndTime.addEventListener(`click`,hidePopupEndTime);
+
+
+
+
 
 spanQuestionLength.textContent = allQuestion.length;
 spanTime.textContent = second;
