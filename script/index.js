@@ -88,6 +88,7 @@ const countTime = () =>{
         if(second == 0){
             popupStart.classList.remove(`hide`);
             BTNclearScore()
+             alert(`Upłynął czas, spróbuj ponownie !!`)
     }
 };
 
