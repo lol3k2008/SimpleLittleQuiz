@@ -5,7 +5,7 @@
   }
 
   @media (max-width: 850px) {
-    .date{
+    .remainingTime{
       margin: 0 auto;
     }
     .wrapper{
